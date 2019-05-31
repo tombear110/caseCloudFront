@@ -1,0 +1,48 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-25 14:01:35
+  */
+@import "../scss/components/color_variables";
+
+.home-feedback-detail {
+
+    .circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    .fd-heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        li {
+            display: inline-block;
+        }
+    }
+    .list-group {
+        .list-item {
+            font-size: 14px;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            .it-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .user {
+                    color: $co-666;
+                }
+                .time {
+                    color: $co-999;
+                }
+            }
+            p {
+                color: $co-999;
+                line-height: 1.5;
+            }
+
+        }
+    }
+}

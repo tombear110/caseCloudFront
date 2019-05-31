@@ -1,0 +1,186 @@
+
+@import "../../scss/components/color_variables";
+
+.left-menu{
+    box-sizing: border-box;
+    position: relative;
+    height: calc(100vh - 80px);
+    background-color: #FFF;
+    overflow: auto;
+    box-shadow:0px 2px 10px 0px rgba(162,175,216,0.2);
+    .menu-top{
+        height: 240px;
+        border-bottom: 1px solid #E1E4EE;
+        overflow: hidden;
+        .close-menu-top{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                box-shadow: 0 0 10px 1px #ccc;
+            }
+        }
+        .user-img{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 40px auto 0;
+            border-radius: 50%;
+            border:1px solid rgba(225,228,238,1);
+            box-shadow:0px 1px 13px 0px rgba(194,204,235,0.29);
+        }
+        .info-wrap{
+            width: 100%;
+            color: #9FA5B9;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 14px;
+            font-weight:bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                display: inline-block;
+                max-width: 80px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            img{
+                width: 94px;
+                height: 28px;
+            }
+        }
+        .item-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            .item{
+                width: 80px;
+                height: 38px;
+                border-radius: 5px;
+                box-shadow:0px 3px 6px 0px rgba(197,175,144,0.13);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    color: #D4D9EA;
+                    font-size: 17px;
+                }
+                span{
+                    font-size: 14px;
+                    color: #9FA5B9;
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+    .divider {
+        margin: 30px auto;
+        height: 1px;
+        width: 140px;
+        background-color: #E1E4EE;
+    }
+    .el-menu,.el-submenu{
+        background-color: #FFF;
+    }
+
+    .el-menu-tm {
+        border: none;
+        overflow: hidden;
+        padding-top: 10px;
+        .el-menu-item-group{
+            background-color: #FFF;
+            .el-menu-item-group__title{
+                display: none;
+            }
+        }
+        .el-menu-item:focus, .el-menu-item:hover, .el-submenu__title:hover{
+            background-color: #FFF;
+        }
+        .el-submenu__title{
+            color: #9FA5B9;
+            height: 70px;
+            line-height: 70px;
+            i{
+                font-size: 20px;
+                color: #9FA5B9;
+            }
+            .el-submenu__icon-arrow{
+                font-size: 12px;
+            }
+        }
+        .is-active {
+            position: relative;
+            .el-submenu__title {
+                color: #1B1C1F;
+                background: #F9F3EA;
+                i {
+                    color: #ECB86C;
+
+                }
+            }
+            .el-submenu__title::after{
+                content:"";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 3px;
+                background: #ECB86C;
+            }
+        }
+        .el-menu-item{
+            color: #9FA5B9;
+            height: 45px;
+            line-height: 45px;
+            background: #FFF;
+            i{
+                color: #9FA5B9;
+            }
+        }
+        .el-menu-item.is-active {
+            font-size: 14px;
+            color: #ECB86C;
+        }
+    }
+    .el-menu-tm:not(.el-menu--collapse) {
+        width: 220px;
+    }
+    .collapse-button {
+        box-sizing: border-box;
+        width:220px;
+        position: fixed;
+        bottom: 0;
+        height: 45px;
+        padding: 0 20px;
+        line-height: 45px;
+        color: #9FA5B9;
+        background: #fff;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        font-size: 14px;
+        white-space: nowrap;
+        cursor: pointer;
+        border-top: 1px solid #e2e5ea;
+        background: #FFF;
+        i {
+            margin-right: 15px;
+        }
+    }
+}
+
+.active-collapse {
+    .collapse-button {
+        width: 64px;
+    }
+}
+
+
+

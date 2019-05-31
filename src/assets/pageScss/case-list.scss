@@ -1,0 +1,210 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-25 15:52:14
+  */
+@import "../../../src/assets/scss/components/_color_variables";
+
+
+.table-nav {
+    display: flex;
+    padding: 20px 0;
+    .suffix-item {
+        flex: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $co-666;
+        li {
+            cursor: pointer;
+            margin-right: 30px;
+        }
+
+    }
+    .nav-item {
+
+        display: flex;
+        align-items: center;
+        &__select{
+            position: relative;
+            margin-right: 20px;
+            width: 90px;
+            &:before{
+                position: absolute;
+                left: -7px;
+                top: 8px;
+                content: '|';
+                color: #9FA5B9;
+
+            }
+        }
+    }
+
+    .tab-group {
+        display: flex;
+        padding: 7px 10px;
+        border-radius: 4px;
+        margin-right: 50px;
+        li {
+            padding: 0 10px;
+            height: 100%;
+            line-height: 1;
+            font-size: 16px;
+            color: #9FA5B9;
+            border-right: 1px solid $co-999;
+            cursor: pointer;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        .active {
+            color: $co-info;
+        }
+    }
+}
+
+.nav-search{
+    .el-input__inner{
+        padding-left: 35px;
+        padding-right: 25px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .el-input__icon{
+        font-size: 22px;
+    }
+}
+
+
+//popover弹出框修改
+.de-popover {
+    padding: 10px 0 5px 0;
+    .degree-box {
+        margin-bottom: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: $--color-border-base;
+        }
+        @mixin degree($n) {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 15px;
+            border-radius: 50%;
+            background-color: $n;
+        }
+        .degree3 {
+            @include degree(#EC5050);
+        }
+        .degree2 {
+            @include degree(#FFA836);
+        }
+        .degree1 {
+            @include degree(#BCBCBC);
+        }
+    }
+}
+
+.case-list{
+    background-color: $co-fff;
+    border: 1px solid #E6E6E6;
+    margin-bottom: 25px;
+    tr{
+        cursor: pointer;
+    }
+    @mixin degree($n){
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $n;
+    }
+    .degree3 {
+        @include degree(#EC5050);
+    }
+    .degree2{
+        @include degree(#FFA836);
+    }
+    .degree1{
+        @include degree(#BCBCBC);
+    }
+}
+
+.search-area {
+    position: relative;
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .el-form-item__content {
+        line-height: 22px;
+    }
+
+    .search-active {
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+        text-indent: 2px;
+        font-size: 14px;
+        color: #666;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #666;
+        .search-input {
+            .el-input__inner {
+                box-sizing: border-box;
+                -webkit-flex: auto;
+                -ms-flex: auto;
+                flex: auto;
+                max-width: 100%;
+                padding: 0 5px;
+                line-height: 24px;
+                height: 24px;
+                font-size: 12px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+            }
+        }
+        .s-full-text {
+            cursor: pointer;
+        }
+    }
+
+    .search-more {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 300px;
+        padding: 20px;
+        box-shadow: -2px 0 20px 0 rgba(0, 0, 0, .2);
+        border-radius: 4px;
+        background-color: #fff;
+        z-index: 99;
+    }
+}
+
+.search-form{
+    display: flex;
+}
+
+.approval-dialog{
+    .el-dialog__body{
+        max-height: 700px;
+        overflow: auto;
+    }
+    .approval-form{
+        //width: 600px;
+        .item-box{
+            display: flex;
+        }
+    }
+    h4{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,207 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-23 15:32:39
+  */
+@import "../scss/components/color_variables";
+
+.home-calendar-week {
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        .header-center {
+            display: flex;
+            li {
+                display: flex;
+                align-items: center;
+                line-height: 1;
+            }
+        }
+    }
+    .day-box {
+        background-color: $--body-background;
+        border: 1px solid $--color-border-base;
+    }
+
+    .day-content {
+        background-color: $--body-background;
+        border-bottom: 1px solid $--color-border-base;
+        .dc-title {
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            background-color: $--calendar-week-th;
+            color: $--color-text-bold;
+        }
+        .dc-main {
+            padding: 0 20px;
+            li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+                .item-text {
+                    flex: 1;
+                    color: $--color-text-light-1;
+                    font-size: 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        .no-msg {
+            display: flex;
+            height: 53px;
+            padding: 0 20px;
+            align-items: center;
+            justify-content: flex-start;
+            color: $--color-text-light-1;
+        }
+    }
+}
+
+.home-calendar-month {
+
+    position: relative;
+
+    .calendar-header {
+        position: absolute;
+        top: 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+    .comp-full-calendar {
+        max-width: none !important;
+        padding: 18px 0 0 0;
+        margin-left: -1px;
+    }
+
+    .full-calendar-header .header-center {
+        font-size: 16px;
+        z-index: 19;
+    }
+
+    .full-calendar-body .weeks {
+        line-height: 60px;
+    }
+
+    .full-calendar-body .dates .dates-events .events-week .events-day .event-box .done {
+        background-color: $--calendar-done !important;
+    }
+
+    .full-calendar-body .dates .dates-events .events-week .events-day .event-box .doing {
+        background-color: $--calendar-doing !important;
+    }
+    .full-calendar-body .dates .more-events .more-body .body-list .doing {
+        background-color: $--calendar-doing !important;
+    }
+    .full-calendar-body .dates .more-events .more-body .body-list .done {
+        background-color: $--calendar-done !important;
+    }
+    .full-calendar-body .dates .dates-events .events-week .events-day .event-box .event-item {
+        color: $--color-text-primary;
+    }
+    .full-calendar-body .dates .more-events .more-body .body-list .body-item {
+        color: $--color-text-primary;
+    }
+
+    .full-calendar-header .header-center {
+        flex: 0.5;
+    }
+    .tt-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .myCard {
+        position: absolute;
+        width: 320px;
+        /*height: 184px;*/
+        background-color: $--body-background;
+        border: 1px solid $--color-border-base;
+        border-radius: 2px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+        z-index: 100;
+    }
+
+    .card-body {
+        padding: 15px 10px 0;
+    }
+
+    .myCard .point {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        margin-right: 2px;
+        background-color: $--color-text-link;
+    }
+
+    .myCard .pl10 {
+        padding-left: 10px
+    }
+
+    .myCard p,
+    .myCard .pb10 {
+        font-size: 12px !important;
+        line-height: 22px;
+        padding-bottom: 10px !important;
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 0 10px;
+        /*line-height: 22px;*/
+        /*font-size: 12px;*/
+        /*padding: 10px 10px;*/
+        border-top: 1px solid $--color-border-base;
+    }
+
+    .toggle-status {
+        display: flex;
+    }
+
+    .color-mark {
+        display: flex;
+        margin-left: 15px;
+        li {
+            display: flex;
+            height: 28px;
+            align-items: center;
+            margin-right: 15px;
+            cursor: pointer;
+            &:hover {
+                .text {
+                    color: $--color-text-link;
+                }
+            }
+            .text {
+                line-height: 1;
+            }
+            .color-block {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .bg-A0C9FF {
+        background-color: $--calendar-done;
+    }
+
+    .bg-F0A7C4 {
+        background-color: $--calendar-doing ;
+    }
+}

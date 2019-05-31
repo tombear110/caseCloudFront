@@ -1,0 +1,109 @@
+
+
+
+@import "light";
+
+
+$--color-text-primary:$--color-black;    //基础字体颜色
+
+$--color-text-link: $--color-blue;   //链接 ,蓝色
+
+$--color-icon-blue: $--color-blue-light-4;   //案件详情页，标题，蓝色图标
+
+
+$--color-text-bold: $--color-black-bold;   //深一号的黑色
+
+$--color-text-light-1: $--color-black-light-1;
+
+$--color-text-light-4: $--color-black-light-4;   //状态为已办的字体颜色
+
+$--color-text-light-5: $--color-black-light-5;   //状态为待办的字体颜色
+
+$--color-text-light-3: $--color-black-light-3;
+$--color-text-light-6: $--color-black-light-6;
+$--color-text-light-9: $--color-black-light-9;
+
+$--color-text-white: $--color-white;
+
+$--color-border-base: $--color-black-light-7;   //基础border颜色
+
+//body
+$--body-background:#EDF2FF;
+
+//自定义颜色
+
+//左侧导航栏颜色
+$--nav-background: #343A4E;
+$--nav-background-hover:#409EFF;
+
+//自定义折叠按钮
+$--collapse-text-color: $--color-white;
+$--collapse-button-background: $--collapse-button-background;
+$--collapse-button-background-hover: $--color-blue;
+
+//自定义等级状态
+$-degree-background-status-1:#EC5050;
+$-degree-background-status-2:#969ca7;
+$-degree-background-status-3:#e9e9e9;
+
+//自定义按钮--法官接待日
+$--openday-button-background: $--color-blue-light-2;
+$--openday-button-background-hover: $--color-blue-light-1;
+$--openday-block-background-hover: $--color-blue-light-3;
+
+//home-calendar
+$--calendar-doing:$--calendar-doing;
+$--calendar-done: $--calendar-done;
+$--calendar-week-th: $--calendar-week-th;
+
+//案件-项目，详情页 table
+$--table-background-th: $--table-background-th;
+$--table-border: $--table-border;
+
+//menu-dropdown
+$--menu-dropdown-background:$--menu-dropdown-background;
+
+
+
+
+//$--color-text-regular: #606266 !default;
+//$--color-text-secondary: #909399 !default;
+//$--color-text-placeholder: #c0c4cc !default;
+//
+
+$--color-success: $--color-success;
+$--color-warning:$--color-warning;
+$--color-danger: $--color-danger;
+
+
+$co-fff:#fff;
+$co-000:#000;
+$co-333:#333;
+$co-666:#666;
+$co-888:#888;
+$co-999:#999;
+$co-343A4E:#343A4E;
+$co-EDF2FF:#EDF2FF;
+
+//$co-409EFF:#4698A2;
+
+$co-008AFE:#008AFE;
+$co-F6F8FE:#F6F8FE;
+$co-CCC:#CCC;
+$co-F5FAFF:#F5FAFF;
+$co-323232:#323232;
+$co-EDF2FF:#EDF2FF;
+$co-F6F8FE:#F6F8FE;
+$co-846545:#846545;
+$co-9FA5B9:#9FA5B9;
+
+
+$co-danger:#EC5050;
+$co-info: #ECB86C;
+$co-line: #e1e4ee;
+
+
+//$co-link: #E1B283;
+
+
+

@@ -1,0 +1,44 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-23 14:43:58
+  */
+@import "../scss/components/color_variables";
+
+.home-schedule {
+
+    .list-group {
+        padding-top: 30px;
+    }
+    .list-item {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        padding: 0 20px;
+        border-bottom: 1px solid $--color-border-base;
+        .item-icon {
+            display: flex;
+            align-items: center;
+        }
+        .item-main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            overflow: hidden;
+            .item-text {
+                flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-left: 20px;
+                font-size: 12px;
+            }
+            .item-date {
+                font-size: 14px;
+                margin-left: 20px;
+            }
+        }
+
+    }
+
+}

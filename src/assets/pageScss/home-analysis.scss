@@ -1,0 +1,297 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-24 11:11:50
+  */
+@import "../../../src/assets/scss/components/_color_variables";
+
+@mixin block($n) {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: $n;
+}
+
+.block-1 {
+    @include block(#81BCFF)
+}
+
+.block-2 {
+    @include block(#FFE184)
+}
+
+.block-3 {
+    @include block(#DBD5FF)
+}
+
+.block-4 {
+    @include block(#81BCFF)
+}
+
+.block-5 {
+    @include block(#FFE184)
+}
+
+.block-6 {
+    @include block(#FFC799)
+}
+
+.block-7 {
+    @include block(#DBD5FF)
+}
+
+.block-8 {
+    @include block(#79C9EB)
+}
+
+.block-9 {
+    @include block(#6BE6C1)
+}
+
+.bg-0 {
+    background-color: #81BCFF;
+}
+
+.bg-1 {
+    background-color: #B68FF4;
+}
+
+.bg-2 {
+    background-color: #CFF4F1;
+}
+
+.right-0{
+    background-color: #74CEE8;
+}
+
+.right-1{
+    background-color: #409EFF;
+}
+
+.right-2{
+    background-color: #6262E8;
+}
+
+.right-3{
+    background-color: #7EB0FF;
+}
+
+.right-4{
+    background-color: #9D5EFF;
+}
+
+.client-left-0{
+    background-color: #B68FF4;
+}
+.client-left-1{
+    background-color: #81BCFF;
+}
+.client-right-0{
+    background-color: #98DFF3;
+}
+.client-right-1{
+    background-color: #79BCE9;
+}
+
+.home-analysis-case {
+    padding: 0 30px;
+    background-color: $co-fff;
+    .charts-1 {
+        display: flex;
+        margin-bottom: 100px;
+
+        .charts-left {
+            .title {
+                width: 180px;
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            .charts-box {
+                display: flex;
+                align-items: center;
+                .charts {
+                    width: 180px !important;
+                    height: 180px !important;
+                }
+                .data-group {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 170px;
+                    height: 130px;
+                    margin-left: 80px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        span {
+                            display: flex;
+                            align-items: center;
+                        }
+                        i {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 4px;
+                            margin-right: 12px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .charts-left-project {
+            //flex: 1;
+            width: 430px;
+            .progress-title {
+                font-size: 16px;
+            }
+            .progress-main {
+                max-width: 480px;
+                .list-group {
+                    margin-top: 40px;
+                    padding-right: 50px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 25px;
+                    }
+                    .team_active {
+                        justify-content: flex-start;
+                        span {
+                            margin-right: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+        .charts-right {
+            flex: 1;
+            text-align: right;
+            .title {
+                display: inline-block;
+                margin-right: 490px;
+                width: 180px;
+                text-align: left;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            .charts-box {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                .charts {
+                    width: 180px !important;
+                    height: 180px !important;
+                }
+                .data-group-right {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-top: 20px;
+                    margin-left: 80px;
+                    max-width: 460px;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 170px;
+                        margin-right: 40px;
+                        margin-bottom: 20px;
+                        span {
+                            display: flex;
+                            align-items: center;
+                        }
+                        i {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 4px;
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .charts-2 {
+        .charts-title {
+            font-size: 16px;
+        }
+    }
+}
+
+
+.home-analysis-customer {
+    padding: 0 30px;
+    background-color: $co-fff;
+    .charts-1 {
+        display: flex;
+        margin-bottom: 100px;
+        .block-charts {
+            display: flex;
+            flex: 1;
+            .charts-left {
+                width: 180px;
+                .title {
+                    text-align: center;
+                    font-size: 16px;
+                    margin-bottom: 40px;
+                }
+
+            }
+            .charts-right {
+                position: relative;
+                flex: 1;
+                margin-left: 80px;
+                .data-group {
+                    position: absolute;
+                    bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 130px;
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        i {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 4px;
+                            margin-right: 12px;
+                        }
+                        span{
+                            margin-right: 40px;
+                        }
+                    }
+                }
+                .data-group-right {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-top: 20px;
+                    max-width: 460px;
+                    color: #2F3033;
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 170px;
+                        margin-right: 40px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .block-charts-right {
+            flex: 1.5;
+        }
+    }
+    .charts-2 {
+        .charts-title {
+            font-size: 16px;
+
+        }
+    }
+}

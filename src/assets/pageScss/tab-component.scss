@@ -1,0 +1,40 @@
+@import "../scss/components/color_variables";
+
+@mixin tab-base($size: 16px,$weight:400,$height:55px) {
+    display: flex;
+    align-items: center;
+    height: $height;
+    border-bottom: 1px solid #E1E4EE;
+    .tab-list {
+        flex: 1;
+        height: $height;
+        line-height: $height;
+        .tab-item {
+            position: relative;
+            display: inline-block;
+            margin-right: 50px;
+            font-size:$size;
+            font-weight: $weight;
+            color: $co-999;
+            border-bottom: 1px solid transparent;
+            cursor: pointer;
+            .inner-suffix{
+                position: absolute;
+                width: 200px;
+                top: 0;
+                left: 70px;
+            }
+        }
+        .tab-active {
+            color: $co-333;
+            border-bottom-color: $co-info;
+        }
+    }
+}
+
+.tab-component{
+    @include tab-base();
+}
+.tab-component__mini{
+    @include tab-base($size: 15px,$weight:400,$height:35px);
+}

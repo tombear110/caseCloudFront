@@ -1,0 +1,155 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-23 16:20:59
+  */
+@import "../scss/components/color_variables";
+
+.home-openday{
+    .heading{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 49px;
+        span{
+            font-size: 18px;
+            color: $--color-text-bold;
+            font-weight: 600;
+        }
+    }
+    .main {
+        min-height: 800px;
+        padding-top: 10px;
+        .thead {
+            display: flex;
+            height: 60px;
+            li {
+                flex: 300;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*padding: 20px;*/
+                text-align: center;
+                font-size: 16px;
+                color: $--color-text-light-4;
+                border-right: none;
+            }
+            .thead-item-1 {
+                flex: 160;
+                justify-content: flex-start;
+                color: $--color-text-bold;
+            }
+        }
+        .tbody {
+            display: flex;
+            /*background-color: #fff;*/
+            border-top: 1px solid $--color-border-base;
+            li {
+                flex: 300;
+                box-sizing: border-box;
+                text-align: left;
+                height: 380px;
+                padding: 20px;
+                border-right: 1px solid $--color-border-base;
+                &:last-child {
+                    border-right: none;
+                }
+                .cell {
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 15px;
+                    color: $--color-white;
+                    background-color: $--openday-button-background;
+                    border-radius: 4px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    overflow: hidden;
+                    &:hover {
+                        background-color: $--openday-button-background-hover;
+                    }
+                }
+                .n-cell {
+                    display: none;
+                    font-size: 14px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 15px;
+                    color: $--color-text-link;
+                    background-color: $--body-background;
+                    border-radius: 4px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+                    &:hover {
+                        background-color: $--openday-button-background-hover;
+                        color: $--color-text-white;
+                    }
+                }
+            }
+            .tbody-item:hover {
+                background-color: $--openday-block-background-hover;
+                .n-cell {
+                    display: block;
+                }
+            }
+            .column-1 {
+                flex: 160;
+                text-align: center;
+                font-size: 16px;
+                color: $--color-text-light-4;
+                line-height: 348px;
+            }
+        }
+    }
+
+
+}
+
+.popover-box {
+    .popover-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        span {
+            font-size: 14px;
+            color: $--color-text-light-5;
+        }
+        i {
+            font-size: 14px;
+            color: #BFCBD9;
+            cursor: pointer;
+            &:hover {
+                color: $--openday-button-background-hover;
+            }
+        }
+    }
+    .popover-group {
+        border-bottom: 1px solid $--color-border-base;
+        li {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    .popover-footer {
+        text-align: right;
+        padding-top: 10px;
+    }
+}
+
+.new-lawyer {
+    position: absolute;
+    right: 70px;
+    z-index: 2002;
+    color: $--color-text-light-5;
+    i {
+        position: relative;
+        font-size: 20px;
+        top: 3px;
+        cursor: pointer;
+        &:hover {
+            color: $--openday-button-background-hover;
+        }
+    }
+}

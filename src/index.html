@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="not-ie" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=yes,width=1366"/>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <title>案件云</title>
+    <meta name="author" content="tianming2015@foxmail.com">
+    <meta name="Keywords" content="案件云,案件管理系统,律师案件系统,律所案件系统,律所管理系统">
+    <meta name="description" content="案件云是国内领先的案件管理云平台，致力于为律师及公司法务提供优质的办公服务。
+    围绕律师日常办案习惯，案件云打造了诉讼案件、非诉项目、日程管理、客户管理、法律工具等一系列专业功能。">
+    <base href="/">
+    <link href="//at.alicdn.com/t/font_446676_lt34znaxy8n.css" rel="stylesheet">
+    <link href="static/css/loading.css" rel="stylesheet">
+    <script src="//at.alicdn.com/t/font_446676_qonlpehirvi.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1/echarts.common.min.js"></script>
+</head>
+
+<body>
+<script src="static/js/ie_judge.min.js"></script>
+<mainbody class="start-loading">
+    <div class="cssload-main">
+        <span class="cssload-spinner"></span>
+    </div>
+    <h3 class="loading-h3">如果长时间停留在此页面，您可以尝试一下如下操作：</h3>
+    <ul class="loading-text">
+        <li>
+            刷新下您的页面（F5键或者Ctrl+R组合键）；
+        </li>
+        <li>
+            检查下您的浏览器是否开启极速模式，360、QQ、搜狗浏览器在网址栏的最右侧即可找到设置方法；
+        </li>
+        <li>
+            欢迎点击屏幕右下方的机器猫，联系我们的在线工程师帮您解决。
+        </li>
+    </ul>
+</mainbody>
+
+<script type='text/javascript'>
+(function (m, ei, q, i, a, j, s) {
+    m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+    }
+    j = ei.createElement(q),
+        s = ei.getElementsByTagName(q)[0]
+    j.async = true
+    j.charset = 'UTF-8'
+    j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t'
+    s.parentNode.insertBefore(j, s)
+})(window, document, 'script', '_MEIQIA')
+_MEIQIA('entId', 91312)
+function getCookie(name){
+    if (!name) {
+            throw new Error('没有找到key。')
+            return
+        }
+        if (typeof name === 'object') {
+            throw new Error('key不能是一个对象。')
+            return
+        }
+        var cookie = document.cookie
+        if (cookie === '') return {}
+        var cookieArr = cookie.split('; '),
+            result = {}
+        for (var i = 0, l = cookieArr.length; i < l; i++) {
+            var item = cookieArr[i].split('=');
+            //arr.shift()把第一个数组删除并得到删除的值
+            var a = decodeURIComponent(item.shift())
+            var value = decodeURIComponent(item.join(''))
+            result[a] = value
+        }
+        var value = result[name]
+        try {
+            value = JSON.parse(value)
+        } catch (e) {
+            value = {}
+        }
+        return value
+}
+var nowUserInfo = getCookie('ineedtm_storage_user_info').user || {name:'',tel:'',email:'',};
+_MEIQIA('metadata', {
+    name: nowUserInfo.real_name, // 美洽默认字段
+    tel: nowUserInfo.mobile, // 美洽默认字段
+    email: nowUserInfo.email
+});
+</script>
+</body>
+
+</html>
+

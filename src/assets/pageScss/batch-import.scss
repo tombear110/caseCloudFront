@@ -1,0 +1,28 @@
+@import "../../../src/assets/scss/components/_color_variables";
+
+.batch-import {
+    .batch-title {
+        p {
+            line-height: 2.0;
+        }
+
+        .text-download {
+            line-height: 2;
+            a {
+                color: $--color-text-link;
+            }
+        }
+    }
+    .batch-qa {
+        margin-bottom: 30px;
+        h4 {
+            padding: 20px 0;
+            font-size: 16px;
+            font-weight: 100;
+            color: $--color-text-bold;
+        }
+        .text-qa{
+            line-height: 2;
+        }
+    }
+}

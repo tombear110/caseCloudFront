@@ -1,0 +1,4 @@
+{
+    "vue-format.break_attr_limit": 4,
+    "vue-format.html_indent_root": true
+}

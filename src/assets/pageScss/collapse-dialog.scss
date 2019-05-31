@@ -1,0 +1,71 @@
+/**
+  * @User: tombear
+  * @Email: tangte1@foxmail.com
+  * @Date: 2018-11-09 12:02:42
+  * @Description: 新增案件
+  */
+@import "../../../src/assets/scss/components/_color_variables";
+
+.collapse-dialog {
+    .el-dialog__header {
+        padding: 20px 20px 15px 20px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+    }
+    .el-dialog__title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .el-dialog__body {
+        max-height: 760px;
+        overflow: auto;
+        z-index: -19;
+    }
+    .el-dialog__footer {
+        padding: 15px;
+        border-top: 1px solid rgba(0, 0, 0, 0.11);
+    }
+}
+
+.collapse-form {
+    h3 {
+        font-size: 14px;
+        color: $co-333;
+        margin-bottom: 15px;
+    }
+    .form-section {
+
+    }
+    .form-section__suffix {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 18px;
+        font-size: 14px;
+        li {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        i {
+            font-size: 14px;
+            margin-right: 5px;
+        }
+    }
+    .panel {
+        display: flex;
+        align-items: center;
+        .panel-title {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            i {
+                font-size: 14px;
+            }
+            h4 {
+                color: $co-666;
+                font-size: 16px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

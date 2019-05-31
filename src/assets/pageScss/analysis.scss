@@ -1,0 +1,451 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-04-24 11:11:50
+  */
+@import "../../../src/assets/scss/components/_color_variables";
+
+@mixin block($n) {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: $n;
+}
+
+.block-1 {
+    @include block(#81BCFF)
+}
+
+.analysis-tab {
+    margin-bottom: 20px;
+
+    .nav-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .item {
+        font-size: 18px;
+        color: $co-666;
+        margin-right: 80px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(51, 51, 51, 0);
+        cursor: pointer;
+    }
+
+    .active {
+        color: $co-333;
+        border-bottom-color: rgba(51, 51, 51, 1);
+    }
+}
+
+.analysis-wrap {
+    padding-top: 35px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .header-title {
+            flex: 1;
+
+        }
+
+        .radio-group {
+            //display: flex;
+            //text-align: center;
+            width: 200px;
+            height: 34px;
+            line-height: 34px;
+            font-size: 16px;
+            color: #CCC;
+            border: 1px solid #CCC;
+            border-radius: 18px;
+
+            .item {
+                float: left;
+                text-align: center;
+                width: 100px;
+            }
+
+            .active {
+                display: inline-block;
+                width: 100px;
+                margin-top: -1px;
+                //margin-left: -1px;
+                color: #fff;
+                background-color: $co-info;
+                border: 1px solid $co-info;
+                border-right: none;
+                border-left: none;
+                border-radius: 18px;
+            }
+
+            .item:not(.active) {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.analysis-content {
+    &__body {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .charts-card {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-right: 30px;
+        border-radius: 6px;
+        background-color: $co-fff;
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        .tab-group {
+            display: flex;
+
+            .item {
+                display: inline-block;
+                padding: 5px 10px;
+                font-size: 12px;
+                color: $co-999;
+                border: 1px solid $co-999;
+                cursor: pointer;
+
+                i {
+                    font-size: 12px;
+                    margin-right: 5px;
+                }
+            }
+
+            .start {
+                border-radius: 4px 0px 0px 4px;
+            }
+
+            .end {
+                border-left: none;
+                border-radius: 0 4px 4px 0px;
+            }
+
+            .active {
+                color: $co-info;
+                border-color: $co-info;
+            }
+        }
+
+        &__header {
+            display: flex;
+            align-items: center;
+
+            .header-title {
+                position: relative;
+                flex: 1;
+                padding-left: 10px;
+                font-size: 16px;
+                color: #999;
+                border-left: 3px solid $co-info;
+                //&:before{
+                //    position: absolute;
+                //    top: 2px;
+                //    left: -3px;
+                //    content: '|';
+                //    color: $co-info;
+                //
+                //}
+            }
+        }
+
+        &__body {
+            display: flex;
+
+            .charts-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .charts-none {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 400px;
+
+                &__center {
+                    text-align: center;
+
+                    &--icon {
+                        display: inline-block;
+                        font-size: 86px;
+                        line-height: 86px;
+                        color: #DFE4EE;
+                        margin-bottom: 30px;
+                    }
+
+                    &--text {
+                        font-size: 14px;
+                        color: $co-999;
+                    }
+                }
+            }
+
+            .charts-title {
+                text-align: right;
+                flex: 1;
+                font-size: 14px;
+                font-weight: 600;
+                color: $co-666;
+
+                .item {
+                    margin-bottom: 20px;
+
+                    &-title {
+                        margin-right: 20px;
+                    }
+
+                    &-date {
+                        margin-right: 20px;
+                    }
+
+                    &-icon {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.analysis-data {
+    margin-bottom: 10px;
+
+    .charts-box {
+        margin-bottom: 20px;
+    }
+
+    .box-header {
+        padding-bottom: 20px;
+        font-size: 16px;
+        color: #9FA5B9;
+
+    }
+
+    .box-body {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 20% 20% auto;
+        overflow: hidden;
+    }
+
+    .item {
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow:0px 2px 10px 0px rgba(162,175,216,0.2);
+
+        &--1 {
+            grid-column: 1;
+            grid-row: 1;
+            padding: 5px 20px;
+
+        }
+
+        &--2 {
+            grid-column: 2;
+            grid-row: 1;
+            padding: 5px 20px;
+        }
+
+        //item--1,item--2公用的 item-panel,item-control
+        &-panel {
+            display: flex;
+            align-items: center;
+            height: 66px;
+
+            .svg-icon {
+                font-size: 20px;
+                margin-right: 15px;
+            }
+
+            span {
+                font-size: 15px;
+                color: $co-999;
+            }
+
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+            height: 70px;
+            font-size: 36px;
+            color: $co-333;
+            font-weight: bold;
+            border-top: 1px solid #F0F2F5;
+
+        }
+
+        &--3 {
+            grid-column: 3;
+            grid-row: 1/3;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            height: 560px;
+
+            .card-header {
+                display: flex;
+                padding: 20px 0;
+
+                &__panel {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    border-left: 5px solid $co-info;
+                    font-size: 15px;
+                    color: $co-999;
+
+                }
+            }
+
+
+            .card-charts {
+                flex: 1;
+                width: 100%;
+                height: 320px;
+            }
+        }
+
+        &--4 {
+            grid-column: 1/3;
+            grid-row: 2;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+
+            .card-header {
+                padding: 20px 0;
+
+                &__panel {
+                    padding-left: 10px;
+                    border-left: 5px solid $co-info;
+                    font-size: 15px;
+                    color: $co-999;
+
+                }
+            }
+
+            .charts-none {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+                &__center {
+                    text-align: center;
+
+                    &--icon {
+                        display: inline-block;
+                        font-size: 86px;
+                        line-height: 86px;
+                        color: #DFE4EE;
+                        margin-bottom: 30px;
+                    }
+
+                    &--text {
+                        font-size: 14px;
+                        color: $co-999;
+                    }
+                }
+            }
+
+            .card-charts {
+                flex: 1;
+                width: 100%;
+            }
+
+        }
+
+
+    }
+}
+
+.analysis-income{
+    &__wrap{
+        background-color: #fff;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow:0px 2px 10px 0px rgba(162,175,216,0.2);
+    }
+    .box-header{
+        position: relative;
+        border-bottom: 1px solid #E1E4EE;
+        .header-title{
+            text-align: center;
+            height: 65px;
+            line-height: 65px;
+            font-size: 16px;
+            color: #333;
+        }
+        .header-control{
+            position: absolute;
+            right: 20px;
+            top: 21px;
+            .tab-group {
+                display: flex;
+                .item {
+                    display: inline-block;
+                    padding: 2px 10px;
+                    font-size: 12px;
+                    color: $co-999;
+                    border: 1px solid $co-999;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 12px;
+                        margin-right: 5px;
+                    }
+                }
+
+                .start {
+                    border-radius: 4px 0px 0px 4px;
+                }
+
+                .end {
+                    border-left: none;
+                    border-radius: 0 4px 4px 0px;
+                }
+
+                .active {
+                    color: $co-info;
+                    border-color: $co-info;
+                }
+            }
+        }
+    }
+    .box-charts{
+        display: flex;
+        justify-content: space-around;
+    }
+    .item{
+        flex: 1;
+        padding:50px;
+        .item-header{
+            text-align: center;
+            font-size: 15px;
+            color: #999;
+        }
+        .item-charts{
+            height: 400px;
+        }
+    }
+}

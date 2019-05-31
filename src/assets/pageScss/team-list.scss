@@ -1,0 +1,28 @@
+
+@import "../scss/components/color_variables";
+
+.team-info{
+    .list-group {
+        max-width: 1280px;
+    }
+
+    .list-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0;
+        font-size: 14px;
+        border-bottom: 1px solid $--color-border-base;
+        div {
+            width: 400px;
+            color: $--color-text-light-5;
+
+        }
+        span {
+            flex: 1;
+            line-height: 1.5;
+            //color: #474747;
+
+        }
+    }
+}

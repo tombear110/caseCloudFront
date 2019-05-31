@@ -1,0 +1,23 @@
+/**
+  * @Author: tombear
+  * @Date:   2018-07-20 15:49:47
+  */
+
+/* 改变主题色变量 */
+$--color-primary: #ECB86C;
+
+$--radio-button-checked-border-color: $--color-primary !default;
+
+
+//border
+$--border-color-lighter: #e1e4ee !default;
+
+
+//table
+$--table-row-hover-background: #EAE9E9 !default;
+
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

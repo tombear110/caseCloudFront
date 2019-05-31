@@ -1,0 +1,263 @@
+@import "../scss/components/color_variables";
+
+
+.document {
+    display: flex;
+    min-height: 860px;
+    width: 100%;
+    padding-top: 20px;
+
+    .left {
+        flex: 1;
+        margin-right: 20px;
+        padding: 0 15px;
+        background-color: $co-fff;
+    }
+
+    .right {
+        flex: 1;
+        padding: 0 15px;
+        margin-right: 20px;
+        background-color: $co-fff;
+        overflow: hidden;
+    }
+}
+
+
+
+
+.notify-faq {
+    box-sizing: border-box;
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .section {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .collpase-title {
+        display: flex;
+        margin-bottom: 10px;
+
+        .type {
+            flex: 1;
+            font-size: 14px;
+            color: $co-333;
+        }
+
+        .name {
+            color: $co-666;
+            margin-right: 20px;
+        }
+
+        .time {
+            color: $co-999;
+        }
+    }
+
+    .panel-heading {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+
+        i {
+            font-size: 16px;
+        }
+
+        .panel-title {
+            font-size: 16px;
+        }
+    }
+
+    .item-text {
+        padding: 10px 0 10px 23px;
+    }
+
+    .el-collapse,
+    .el-collapse-item__header,
+    .el-collapse-item__wrap {
+        border: none;
+    }
+
+    .el-collapse-item__header {
+        display: flex;
+        font-size: 14px;
+        color: #5e6d82;
+
+        .coll-title {
+            flex: 1;
+            margin-right: 20px;
+            color: $co-666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .text-title {
+        margin-bottom: 14px;
+
+        i {
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 14px;
+            color: $--color-black-light-1;
+        }
+    }
+
+    .text {
+        text-indent: 2em;
+        color: $--color-black-light-9;
+        margin-bottom: 14px;
+    }
+}
+
+.notify-help {
+    margin: 0 -15px;
+
+    .article-dialog {
+        .el-dialog__body {
+            padding: 20px 0;
+        }
+
+    }
+
+    .notify-article {
+        height: 800px;
+        padding: 0 20px;
+        overflow: auto;
+
+        .tags-group {
+            padding: 15px 0;
+
+            li {
+                display: inline-block;
+                padding: 2px 4px;
+                color: #fff;
+                font-size: 12px;
+                margin-right: 10px;
+                background-color: $co-info;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .search {
+        height: 65px;
+        line-height: 65px;
+        padding: 0 20px;
+
+        .search-input {
+            width: 240px;
+        }
+    }
+
+    .list-search {
+        max-width: 240px;
+        padding: 20px 15px 0 15px;
+    }
+
+    .list-group {
+        padding: 10px 0;
+        max-height: 730px;
+        overflow: auto;
+
+        .list-item {
+            position: relative;
+            padding: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #F6F8FE;
+            }
+        }
+
+        .item-title {
+            display: flex;
+            margin-bottom: 10px;
+
+            .it-right {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                .title {
+                    flex: 1;
+                    color: $co-333;
+                    font-size: 15px;
+                    font-weight: 600;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+            }
+
+            .it-left {
+                display: flex;
+                width: 70px;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 15px;
+
+                .circle {
+                    display: inline-block;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 50%;
+                    background-color: $co-info;
+                    z-index: 99;
+                }
+            }
+
+            .tag-list {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 20px;
+
+                .tag-item {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    color: $co-info;
+                    cursor: pointer;
+
+                    &:after {
+                        content: "，";
+                        color: $--color-text-primary;
+                    }
+
+                    &:last-child {
+                        &:after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+        }
+
+        .item-des {
+            color: $--color-black-light-9;
+            line-height: 1.5;
+            margin-left: 85px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .item-line {
+            position: absolute;
+            left: 80px;
+            top: 0;
+            width: 0;
+            height: 100%;
+            border-right: 1px dashed $co-CCC;
+        }
+    }
+}

@@ -1,0 +1,839 @@
+@import "color_variables";
+
+//单选按钮
+.el-radio-button__inner {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+    border-color: #e1e4ee;
+}
+
+//按钮样式修改
+.el-button--info {
+    color: #5E6D82;
+    background-color: #F7F7F7;
+    border-color: #BFCBD9;
+
+    &:hover {
+        color: #5E6D82;
+        background-color: #F7F7F7;
+        border-color: #BFCBD9;
+        opacity: .8;
+    }
+}
+
+.el-radio.is-bordered.is-checked {
+    border-color: #E1B283;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: #E1B283;
+}
+
+//表格样式重置
+.el-table {
+    color: $co-666;
+
+    thead {
+        font-size: 15px;
+        color: $co-999;
+        font-weight: normal;
+    }
+
+    td {
+        border-bottom: none;
+    }
+
+    th{
+        font-weight: normal;
+    }
+
+    &:before {
+        height: 0;
+    }
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: #fafafd;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td {
+    background-color: #f4f5fa;
+}
+
+
+.el-tag--gold {
+    background-color: $co-info;
+    border-color: $co-info;
+    color: $co-fff;
+}
+
+.el-tag--black {
+    background-color: $co-333;
+    border-color: $co-333;
+    color: $co-fff;
+}
+
+.el-tag--gray {
+    background-color: $co-9FA5B9;
+    border-color: $co-9FA5B9;
+    color: $co-fff;
+}
+
+.el-button--micro {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.el-button--large {
+    padding: 12px 10px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.el-button--ghost-link {
+    color: $co-info;
+    border-color: $co-info;
+
+    &:hover {
+        color: tint($co-info 10%);
+        border-color: tint($co-info 10%);
+        background-color: $co-fff;
+    }
+}
+
+//tag
+.el-tag--assist {
+    color: #99A9BF;
+    border-color: #99A9BF;
+    background-color: black;
+}
+
+.el-tag--important {
+    color: #fff;
+    border-color: #FFCD31;
+    background-color: black;
+}
+
+.notify-faq {
+    .el-collapse-item__header {
+        height: 32px;
+        line-height: 32px;
+    }
+
+    .el-collapse-item__arrow {
+        line-height: 32px;
+    }
+
+    .el-collapse-item__content {
+        padding-bottom: 0;
+    }
+}
+
+//dialog and form
+.el-dialog__header {
+    padding: 20px 0 10px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid $co-CCC;
+}
+
+.el-dialog__title {
+    color: $co-333;
+}
+
+.el-dialog__body {
+    padding: 20px 30px;
+}
+
+.el-form-item__label {
+    color: $co-666;
+}
+
+.el-main {
+    padding: 0 20px;
+}
+
+.charts-1 {
+    .el-progress__text {
+        position: relative;
+        top: -40px;
+        left: -30px;
+        font-weight: 600;
+    }
+}
+
+//表单验证提示
+.el-form-item__error {
+    z-index: 99;
+    //padding-top: 0;
+}
+
+//首页
+.popover-menu {
+    padding: 0;
+
+    .select-group {
+        padding: 5px 0;
+
+        .select-item {
+            box-sizing: border-box;
+            text-align: left;
+            height: 26px;
+            line-height: 26px;
+            padding: 0 15px;
+            background-color: #fff;
+            color: #5E6D82;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #4DA1FF;
+                color: #fff;
+            }
+        }
+
+        .select_item_active {
+            background-color: #4DA1FF;
+            color: #fff;
+        }
+
+        .divider {
+            height: 1px;
+            margin: 5px 0;
+            overflow: hidden;
+            background-color: #e5e5e5;
+        }
+    }
+}
+
+//法官接待日
+.popover-cell {
+    padding: 15px;
+}
+
+//法院法官
+.judgeday-dialog {
+    .el-dialog--small {
+        width: 400px;
+    }
+
+    .el-input {
+        max-width: 178px;
+    }
+}
+
+//文字提示样式
+.el-tooltip__popper.is-light {
+    max-width: 400px;
+}
+
+//左侧导航，二级菜单
+.per-nav {
+    .el-menu-item-group__title {
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+    }
+
+    .el-menu-item {
+        padding-left: 20px !important;
+    }
+}
+
+.team-list {
+    .el-radio+.el-radio {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+.row-title {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border-left: 5px solid $co-info;
+
+}
+
+//修改团队信息
+.team-msg {
+    .el-input {
+        width: 300px !important;
+    }
+
+    .el-form-item {
+        padding: 7px 0;
+        border-bottom: 1px solid $--color-border-base;
+        margin-bottom: 0;
+    }
+
+    .el-form-item__error {
+        left: 310px;
+        top: 12px;
+    }
+}
+
+.caculate-form {
+    .el-input {
+        width: 300px !important;
+    }
+
+    .el-form-item {
+        padding: 7px 0;
+        border-bottom: 1px solid $--color-border-base;
+        margin-bottom: 0;
+    }
+
+    .el-form-item__error {
+        padding-top: 4px;
+    }
+}
+
+$co-4a1ff: #4da1ff;
+$co-1F2F3D: #1F2F3D;
+
+//project-form
+.project-form {
+    .el-input {
+        width: 210px;
+    }
+
+    .el-input__inner {
+        height: 36px !important;
+    }
+}
+
+.batch-search-form {
+    .el-form-item__label {
+        line-height: 13px;
+    }
+
+}
+
+.el-step__head.is-gold {
+    color: $co-info;
+    border-color: $co-info;
+}
+
+//步骤条-颜色调整
+.el-step__title.is-gold {
+    color: $co-info;
+}
+
+//日程管理
+.ca-checkbox {
+    padding: 18px 40px;
+    border-bottom: 1px solid #E9E9E9;
+    border-top: 1px solid #E9E9E9;
+
+    .el-checkbox__label {
+        padding-left: 15px;
+    }
+
+    .el-checkbox__input.is-checked .el-checkbox__inner {
+        background-color: #4DA1FF !important;
+    }
+
+    .el-checkbox__input.is-disabled+.el-checkbox__label {
+        color: #5E6D82;
+        cursor: not-allowed;
+    }
+}
+
+
+//去除选择器-多选-collapse-tags-样式异常
+// 不知道为什么出现的异常
+.el-select__tags>span {
+    display: inline-block;
+    width: inherit !important;
+}
+
+.el-select-dropdown__wrap {
+    max-height: 370px;
+}
+
+.day-record {
+    .border-active {
+        padding-top: 18px;
+        border-top: 1px dashed #DCDFE6;
+    }
+
+    h4 {
+        margin-bottom: 18px;
+        font-weight: 100;
+    }
+
+    .item-box {
+        margin-bottom: 0;
+
+        .el-form-item__content {
+            display: flex;
+        }
+    }
+
+    .el-dialog {
+        //width: 670px;
+        //width: 70%;
+    }
+
+    .el-form-item__label {
+        font-size: 12px;
+    }
+
+    .el-radio__label {
+        font-size: 12px;
+    }
+
+    .el-dialog__body {
+        padding: 20px 40px 20px 20px;
+    }
+
+    .el-input--small .el-input__inner {
+        height: 32px !important;
+    }
+}
+
+//个人中心详情页  头部导航
+.detail-title {
+    li {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 15px;
+        border: 1px solid #bfcbd9;
+        margin-right: 10px;
+        border-radius: 4px;
+
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 36px;
+            color: #5e6d82;
+            line-height: 36px;
+
+        }
+
+        :hover {
+            color: #fff;
+            background-color: #0c80df;
+        }
+
+        .router-link-active {
+            color: #fff;
+            background-color: #0c80df;
+        }
+    }
+
+    li:first-child {
+        width: 88px;
+    }
+
+    li:nth-child(n+2) {
+        width: 65px;
+    }
+}
+
+//办案记录弹出框
+.record-wrap {
+
+    //.el-dialog--small{
+    //    width: 42%;
+    //}
+    .el-checkbox {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .el-dialog__header {
+        padding: 15px 20px;
+        background-color: #f7f7f7;
+    }
+
+    .el-dialog__body {
+        padding-top: 15px;
+    }
+}
+
+.batch-dialog {
+    .el-dialog {
+        width: 350px;
+    }
+
+    .el-dialog__body {
+        padding: 10px 20px 20px 20px;
+    }
+}
+
+//案件，项目等搜索栏
+.case-search-form {
+    padding-top: 15px;
+    border-bottom: 1px solid $--color-border-base;
+
+    .el-cascader--small {
+        width: 240px;
+    }
+
+    .el-input--small {
+        width: 240px;
+    }
+
+    .el-range-editor--small.el-input__inner {
+        width: 240px;
+    }
+
+    .el-date-editor .el-range-input {
+        width: 34%;
+    }
+}
+
+//项目搜索
+.pro-search-form {
+    padding: 15px 20px 0;
+
+    .el-cascader--small {
+        width: 200px;
+    }
+
+    .el-input--small {
+        width: 200px;
+    }
+
+    .el-range-editor--small.el-input__inner {
+        width: 200px;
+    }
+}
+
+//宽350 dialog
+.dialog-1>div {
+    width: 350px;
+    //height: 410px;
+}
+
+.dialog-1 {
+    .el-dialog__body {
+        padding: 0;
+    }
+
+    .el-dialog__header {
+        padding: 25px 25px 0;
+        background-color: #475669;
+
+        button {
+            float: none;
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
+
+//共享案件 宽350
+.dialog-2>div {
+    width: 350px;
+}
+
+.dialog-2 {
+
+    .el-dialog__body {
+        padding: 0;
+    }
+
+    .dialog-footer {
+        text-align: right;
+        padding: 15px 20px;
+        //background-color: $--body-background*.95;
+    }
+
+    .share-col {
+        padding: 0 20px;
+
+        .el-form-item {
+            margin: 0;
+        }
+
+        .share-elform {
+            float: right;
+        }
+    }
+
+    .share-col:nth-child(2n) {
+        //background-color: $--body-background*.95;
+    }
+}
+
+//分配案件
+.dialog-3>div {
+    width: 350px;
+}
+
+.dialog-3 {
+    .el-dialog__header {
+        padding: 13px 20px;
+        background-color: #F7F7F7;
+
+        .el-dialog__title {
+            font-size: 14px;
+        }
+    }
+
+    .el-dialog__body {
+        padding: 0;
+
+        .el-form-item {
+            margin: 0;
+            padding: 15px 20px;
+        }
+
+        .dialog-3-select {
+
+            border-bottom: 1px solid #E9E9E9;
+
+            .el-select {
+                width: 100%;
+            }
+        }
+
+        .dialog-3-radio {
+            .el-form-item__label {
+                padding-bottom: 18px;
+            }
+
+            .dialog-3-emp {
+                height: 15px;
+            }
+        }
+
+    }
+
+    .el-dialog__footer {
+        padding: 15px 20px;
+        background-color: #F6F8FA;
+    }
+}
+
+//修改文件名
+.dialog-4>div {
+    width: 350px;
+}
+
+.dialog-4 {
+    .el-dialog__header {
+        padding: 14px 20px;
+        background-color: #F7F7F7;
+    }
+
+    .el-dialog__body {
+        padding: 15px 20px;
+    }
+
+    .el-dialog__footer {
+        border-top: 1px solid #E9E9E9;
+    }
+}
+
+//诉讼案件，非诉项目中的团对案件
+.search-proteam {
+    .el-select {
+        width: 88px;
+
+        .el-input {
+            .el-input__inner {
+                height: 30px;
+            }
+        }
+    }
+
+}
+
+//客户管理，搜索栏
+.client-form {
+    .el-input__inner {
+        max-width: 160px;
+    }
+
+}
+
+//.judgeday-dialog {
+//    .el-dialog {
+//        width: 400px;
+//    }
+//
+//    .el-dialog__body {
+//        padding-top: 15px;
+//    }
+//
+//    .el-dialog__header {
+//        padding: 15px;
+//        background-color: #F7F7F7;
+//    }
+//}
+
+.el-popover {
+    min-width: 80px;
+    box-sizing: border-box;
+}
+
+.el-select-dropdown__item--self {
+    font-size: 14px;
+    padding: 0 20px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #606266;
+    height: 34px;
+    line-height: 34px;
+    box-sizing: border-box;
+}
+
+.select-ghost {
+    .el-input__inner {
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: #9FA5B9;
+        font-size: 16px;
+    }
+
+    .el-input .el-select__caret {
+        color: #9FA5B9;
+    }
+}
+
+.select-ghost-1 {
+    .el-input__inner {
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        background-color: rgba(255, 255, 255, 0);
+        color: $co-info;
+        border-color: $co-info;
+    }
+
+    .el-input .el-select__caret {
+        color: $co-info;
+    }
+}
+
+.calendar-select {
+    .el-input__inner {
+        border: none;
+    }
+
+    .el-select__tags {
+        display: none;
+    }
+
+    .el-input__suffix {
+        left: 20px;
+
+        &:before {
+            content: "同事日程";
+            font-size: 18px;
+            font-weight: 100;
+            color: #9FA5B9;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+.member-row {
+    .cell {
+        padding-left: 20px;
+    }
+
+    &:hover>td {
+        background-color: #EAE9E9 !important;
+    }
+}
+
+.vip-remind {
+    background: url('/static/images/vip-crown.png') no-repeat;
+    background-size: cover;
+
+    &--wx {
+        .vip-remind {
+            background: url('/static/images/vip-wx.png') no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    .el-dialog__header {
+        border: none;
+
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 10px;
+
+        &-text {
+            max-width: 480px;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #826D51;
+
+        }
+
+        &-link {
+            display: inline-block;
+            font-size: 14px;
+            color: #AA9A88;
+            margin-top: 22px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &-btn {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 260px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #ECB86C;
+            cursor: pointer;
+        }
+    }
+}
+
+.date-picker--round {
+    width: 166px !important;
+
+    .el-input__inner {
+        border-radius: 18px;
+        background-color: transparent;
+    }
+}
+
+.el-radio-button--thinner {
+    .el-radio-button__inner {
+        padding: 3px 30px;
+    }
+}
+
+.charts-date-range{
+    border-radius: 18px;
+    background-color: transparent;
+    .el-range-input {
+        background-color: transparent;
+    }
+}
+
+
+.client-select--round{
+    .el-input__inner{
+        border-radius: 14px;
+    }
+}

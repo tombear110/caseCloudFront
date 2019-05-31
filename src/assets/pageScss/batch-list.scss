@@ -1,0 +1,29 @@
+@import "../../../src/assets/scss/components/_color_variables";
+
+.batch-my {
+    padding: 0 15px;
+    background-color: $co-fff;
+    .search-box{
+        padding: 20px 0;
+    }
+    .table-prefix {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+
+
+}
+
+.batch-list{
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0 20px 0;
+    }
+    .main{
+        min-height: 800px;
+    }
+}
